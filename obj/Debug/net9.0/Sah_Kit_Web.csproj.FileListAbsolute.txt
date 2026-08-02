@@ -76,3 +76,4 @@ C:\Users\faiza\Documents\Ctheory\BS_folder\Sah_Kit_Web\obj\Debug\net9.0\refint\S
 C:\Users\faiza\Documents\Ctheory\BS_folder\Sah_Kit_Web\obj\Debug\net9.0\Sah_Kit_Web.pdb
 C:\Users\faiza\Documents\Ctheory\BS_folder\Sah_Kit_Web\obj\Debug\net9.0\Sah_Kit_Web.genruntimeconfig.cache
 C:\Users\faiza\Documents\Ctheory\BS_folder\Sah_Kit_Web\obj\Debug\net9.0\ref\Sah_Kit_Web.dll
+C:\Users\faiza\Documents\Ctheory\BS_folder\Sah_Kit_Web\obj\Debug\net9.0\Sah_Kit_Web.sourcelink.json

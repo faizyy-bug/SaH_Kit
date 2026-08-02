@@ -1,7 +1,27 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<div style="max-width: 400px; margin: 20px; font-family: sans-serif;">
+    <h1>SaH ToolKit</h1>
 
-<h1>Hello, world!</h1>
+    <label>Klantnaam:</label><br/>
+    <input type="text" style="width: 100%; padding: 5px; margin-bottom: 10px;"/>
 
-Welcome to your new app.
+    <label>Category:</label><br/>
+    <select style="width: 100%; padding: 5px; margin-bottom: 10px;">
+        @foreach (string value in Enum.GetNames(typeof(Skill)))
+        {
+            <option>@value</option>
+        }
+    </select>
+
+    <label>Duur (minuten):</label><br/>
+    <input type="number" style="width: 100%; padding: 5px; margin-bottom: 10px;"/>
+
+    <label>Probleem opgelost?</label>
+    <input type="checkbox" style="margin-bottom: 10px;"/><br/>
+
+    <label>Notities:</label><br/>
+    <textarea style="width: 100%; padding: 5px; margin-bottom: 10px;" rows="3"></textarea>
+
+    <button style="padding: 10px 20px;">Toevoegen aan bezoekenlijst</button>
+</div>
