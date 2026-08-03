@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sah_Kit_Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e35e31fa928ae2d6693b9b63b6af98696208fe6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ac7ec4845691be365c86bad892d42e16db134de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sah_Kit_Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sah_Kit_Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
