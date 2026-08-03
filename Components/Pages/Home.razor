@@ -1,9 +1,10 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 @using System.Text.Json;
+@inject VisitService visitService
 
-<div style="max-width: 400px; margin: 20px; font-family: sans-serif;">
-    <h1>SaH ToolKit</h1>
+<div style="max-width: 700px; margin: 20px; font: JetBrains Mono;">
+    <h1>Bezoek Form</h1>
 
     <label>Klantnaam:</label><br/>
     <input type="text" @bind="clientName" style="width: 100%; padding: 5px; margin-bottom: 10px;"/>
@@ -26,17 +27,10 @@
     <textarea @bind="notes" style="width: 100%; padding: 5px; margin-bottom: 10px;" rows="3"></textarea>
     <p style="color: red;">@errorMessage</p>
     <button @onclick="AddVisit" style="padding: 10px 20px;">Toevoegen aan bezoekenlijst</button>
-
-    @foreach (Visit visit in visits)
-    {
-        <p>@visit.Name_Client - @visit.Category - @visit.Fixed - @visit.Notes</p>
-    }
 </div>
 
 @code
 {
-    private string _path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "sah_visits.json");
-    List<Visit> visits = new List<Visit>();
     private string clientName = "";
     private string skill = "Software_Installatie";
     private double duration_;
@@ -58,7 +52,7 @@
 
     protected override void OnInitialized()
     {
-        LoadVisits();
+        visitService.LoadVisits();
     }
 
     private void AddVisit()
@@ -76,32 +70,12 @@
         }
         errorMessage = "";
         Enum.TryParse(skill, out Skill parsedSkill);
-        visits.Add(item: new Visit(clientName, parsedSkill, IsChecked, duration, notes));
+        visitService.visits.Add(item: new Visit(clientName, parsedSkill, IsChecked, duration, notes));
         clientName = "";
         notes = "";
         duration = 0;
         IsChecked = false;
         skill = "Software_Installatie";
-        SaveVisits();
+        visitService.SaveVisits();
     }
-
-    private void SaveVisits()
-    {
-        string json = JsonSerializer.Serialize(visits);
-        File.WriteAllText(_path, json);
-    }
-
-    private void LoadVisits()
-    {
-        try
-        {
-            if (File.Exists(_path))
-            {
-                string json = File.ReadAllText(_path);
-                visits = JsonSerializer.Deserialize<List<Visit>>(json);
-            }
-        }
-        catch { throw new FileLoadException(); }
-    }
-
 }
