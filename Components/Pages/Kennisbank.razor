@@ -1,0 +1,46 @@
+@page "/kennisbank"
+@rendermode InteractiveServer
+
+<h1>Kennisbank</h1>
+
+<select @bind="selected" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+    <option value="">-- Kies een probleem --</option>
+    <option value="traag">Hardware is traag</option> // so were setting a value to the main display button
+    <option value="installatie software">Installeren Software</option>
+    <option value="installatie hardware">Installeren Hardware</option>
+    <option value="nalopen randapparatuur">Nalopen Randapparatuur</option>
+</select>
+
+@if (selected == "traag") //using the values with if-blocks in blazor style
+{
+    <h3>Hardware Traag</h3>
+    <p>Checklist</p>
+}
+
+else if (selected == "installatie software")
+{
+    <h3>Installatie Software</h3>
+    <strong><p>HEY, checklist voor het installeren van software vind je hieronder!</p></strong>
+}
+
+else if (selected == "installatie hardware")
+{
+    <h3>Installeren Hardware</h3>
+    <strong><p>Checklists & Benodigheden</p></strong>
+    <h5>PC Installatie (Windows)</h5>
+    <ul>
+        <li>Stap 1: Op aparte usb-stick windows installeren</li>
+    </ul>
+}
+
+else if (selected == "nalopen randapparatuur")
+{
+    <h3>Nalopen Randapparatuur</h3>
+    <p>Checklist</p>
+}
+
+@code
+{
+    private string selected = ""; //actually enabling the value?
+
+}

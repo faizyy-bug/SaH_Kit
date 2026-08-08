@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\faiza\\Documents\\Ctheory\\BS_folder\\Sah_Kit_Web\\Sah_Kit_Web.csproj": {}
+    "/mnt/c/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Sah_Kit_Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\faiza\\Documents\\Ctheory\\BS_folder\\Sah_Kit_Web\\Sah_Kit_Web.csproj": {
+    "/mnt/c/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Sah_Kit_Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\faiza\\Documents\\Ctheory\\BS_folder\\Sah_Kit_Web\\Sah_Kit_Web.csproj",
+        "projectUniqueName": "/mnt/c/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Sah_Kit_Web.csproj",
         "projectName": "Sah_Kit_Web",
-        "projectPath": "C:\\Users\\faiza\\Documents\\Ctheory\\BS_folder\\Sah_Kit_Web\\Sah_Kit_Web.csproj",
-        "packagesPath": "C:\\Users\\faiza\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\faiza\\Documents\\Ctheory\\BS_folder\\Sah_Kit_Web\\obj\\",
+        "projectPath": "/mnt/c/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Sah_Kit_Web.csproj",
+        "packagesPath": "/home/faiz/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\faiza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/faiz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/faiz/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
