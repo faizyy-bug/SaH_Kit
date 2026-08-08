@@ -1,33 +1,31 @@
 ﻿@page "/"
 @rendermode InteractiveServer
-@using System.Text.Json;
 @inject VisitService visitService
 
-<div style="max-width: 700px; margin: 20px; font: JetBrains Mono;">
-    <h1>Bezoek Form</h1>
+<h1>Bezoek Form</h1>
 
-    <label>Klantnaam:</label><br/>
-    <input type="text" @bind="clientName" style="width: 100%; padding: 5px; margin-bottom: 10px;"/>
+<label>Klantnaam:</label>
+<input type="text" @bind="clientName"/>
 
-    <label>Category:</label><br/>
-    <select @bind="skill" style="width: 100%; padding: 5px; margin-bottom: 10px;">
-        @foreach (string value in Enum.GetNames(typeof(Skill)))
-        {
-            <option>@value</option>
-        }
-    </select>
+<label>Categorie:</label>
+<select @bind="skill">
+    @foreach (string value in Enum.GetNames(typeof(Skill)))
+    {
+        <option>@value</option>
+    }
+</select>
 
-    <label>Duur (minuten):</label><br/>
-    <input type="number" @bind="duration" style="width: 100%; padding: 5px; margin-bottom: 10px;"/>
+<label>Duur (minuten):</label>
+<input type="number" @bind="duration"/>
 
-    <label>Probleem opgelost?</label>
-    <input type="checkbox" @bind="IsChecked"  style="margin-bottom: 10px;"/><br/>
+<label>Probleem opgelost?</label>
+<input type="checkbox" @bind="IsChecked"/><br/>
 
-    <label>Notities:</label><br/>
-    <textarea @bind="notes" style="width: 100%; padding: 5px; margin-bottom: 10px;" rows="3"></textarea>
-    <p style="color: red;">@errorMessage</p>
-    <button @onclick="AddVisit" style="padding: 10px 20px;">Toevoegen aan bezoekenlijst</button>
-</div>
+<label>Notities:</label>
+<textarea @bind="notes" rows="3"></textarea>
+
+<p class="error-msg">@errorMessage</p>
+<button @onclick="AddVisit">Toevoegen aan bezoekenlijst</button>
 
 @code
 {

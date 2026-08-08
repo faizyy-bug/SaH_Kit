@@ -2,45 +2,39 @@
 @rendermode InteractiveServer
 
 <h1>Kennisbank</h1>
+<p>
+    Welkom bij de kennisbank! Hierin kun je alle informatie en checklists vinden
+    die jou helpen bij klantbezoeken. Kies een onderwerp hieronder.
+</p>
 
-<select @bind="selected" style="width: 100%; padding: 5px; margin-bottom: 10px;">
-    <option value="">-- Kies een probleem --</option>
-    <option value="traag">Hardware is traag</option> // so were setting a value to the main display button
-    <option value="installatie software">Installeren Software</option>
-    <option value="installatie hardware">Installeren Hardware</option>
-    <option value="nalopen randapparatuur">Nalopen Randapparatuur</option>
-</select>
+<hr/>
 
-@if (selected == "traag") //using the values with if-blocks in blazor style
-{
-    <h3>Hardware Traag</h3>
-    <p>Checklist</p>
-}
+<a class="card" href="kennisbank/traag">
+    <h5>Traag Systeem</h5>
+    <p>Het systeem van de klant is traag</p>
+</a>
 
-else if (selected == "installatie software")
-{
-    <h3>Installatie Software</h3>
-    <strong><p>HEY, checklist voor het installeren van software vind je hieronder!</p></strong>
-}
+<a class="card" href="kennisbank/email">
+    <h5>Email Problemen</h5>
+    <p>Klant heeft problemen met email ontvangen of verzenden</p>
+</a>
 
-else if (selected == "installatie hardware")
-{
-    <h3>Installeren Hardware</h3>
-    <strong><p>Checklists & Benodigheden</p></strong>
-    <h5>PC Installatie (Windows)</h5>
-    <ul>
-        <li>Stap 1: Op aparte usb-stick windows installeren</li>
-    </ul>
-}
+<a class="card" href="kennisbank/hardware">
+    <h5>Hardware Installatie</h5>
+    <p>Klant heeft moeite met installeren van nieuwe PC, smartphone of modem</p>
+</a>
 
-else if (selected == "nalopen randapparatuur")
-{
-    <h3>Nalopen Randapparatuur</h3>
-    <p>Checklist</p>
-}
+<a class="card" href="kennisbank/software">
+    <h5>Software Installatie</h5>
+    <p>Klant heeft moeite met software installeren of gebruiken</p>
+</a>
 
-@code
-{
-    private string selected = ""; //actually enabling the value?
+<a class="card" href="kennisbank/randapparatuur">
+    <h5>Randapparatuur</h5>
+    <p>Problemen met printers, webcams, scanners, externe schijven</p>
+</a>
 
-}
+<a class="card" href="kennisbank/apk">
+    <h5>Computer APK</h5>
+    <p>Volledige periodieke check van het systeem van de klant</p>
+</a>

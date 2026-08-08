@@ -1,0 +1,94 @@
+@page "/kennisbank/traag"
+
+<a class="back-link" href="/kennisbank">← Terug naar Kennisbank</a> @*kan vgm gwn met terugpijl knop maar ja*@
+
+<h3>Hardware is traag?</h3>
+<p>
+    Gebruik deze checklist als je vastloopt bij de klant en even niet weet
+    hoe je verder moet om het trage systeem te fixen.
+</p>
+
+<div class="checklist-step"> @*aangezien ik voor elke stap dezelfde UI wil en een betere mooie dan inline
+    ga ik classes gebruiken (net als echt coderen heb je ook een class (blueprint) voor hetzeflde type)*@
+
+    <h4>Stap 1: Vraag de klant</h4>
+    <ul>
+        <li>Wanneer begon het probleem? (na een update, na installatie, geleidelijk?)</li>
+        <li>Wat precies is traag? (alles, browser of app?)</li>
+        <li>Is de computer recent wel goed herstart? (klanten klappen meestal alleen de laptop dicht)</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 2: Herstart de computer</h4>
+    <ul>
+        <li>Echte herstart via Start → Opnieuw opstarten</li>
+        <li>Ruimt geheugen op en stopt vastgelopen processen</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 3: Taakbeheer (Ctrl+Shift+Esc)</h4>
+    <ul>
+        <li>Klik op "Meer details" als het compact is</li>
+        <li>Sorteer op CPU-kolom → kijk wat bovenaan staat</li>
+        <li>Sorteer op Geheugen → kijk wat bovenaan staat</li>
+        <li>Kijk of er veel tabs openstaan van bv. Chrome, Outlook, OneDrive, Windows Update</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 4: Opstarttoepassingen uitschakelen</h4>
+    <ul>
+        <li>Taakbeheer → tabblad "Opstarten" (of Instellingen → Apps → Opstarten)</li>
+        <li>Schakel uit wat niet van belang is voor de klant</li>
+        <li>Antivirus en drivers aan laten!</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 5: Schijfruimte controleren</h4>
+    <ul>
+        <li>Verkenner → Deze PC → kijk naar C: schijf</li>
+        <li>Onder 10% vrij = probleem, onder 5% = kritiek</li>
+        <li>Schijfopruiming draaien: zoek "Schijfopruiming" in Start → selecteer C: → vink alles aan → OK</li>
+        <li>Met klant samen: Prullenbak legen, Downloads-map opruimen, onnodige apps verwijderen</li>
+    </ul>
+    <div class="checklist-tip">Tip: grote bestanden vinden via Instellingen → Systeem → Opslag → klik op categorieën</div>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 6: Windows Update controleren</h4>
+    <ul>
+        <li>Instellingen → Windows Update → Controleren op updates</li>
+        <li>Alles installeren en herstarten als gevraagd</li>
+        <li>Na herstarten altijd nog een keer controleren, soms meerdere rondes nodig</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 7: Browser opschonen</h4>
+    <ul>
+        <li>Controleer hoeveel extensies geïnstalleerd zijn (browserinstellingen → extensies)</li>
+        <li>Verwijder wat klant niet herkent</li>
+        <li>Cache/cookies/geschiedenis wissen (Ctrl+Shift+Delete in elke browser)</li>
+        <li>Controleer of er niet meerdere antivirus-extensies zijn (die bijten van elkaar)</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 8: Malware quickscan</h4>
+    <ul>
+        <li>Windows Beveiliging → Virus- en bedreigingsbeveiliging → Snelle scan</li>
+        <li>Voor een diepere scan: Volledige scan of Microsoft Defender Offline-scan</li>
+    </ul>
+</div>
+
+<div class="checklist-step">
+    <h4>Stap 9: Visuele/fysieke check</h4>
+    <ul>
+        <li>Laptop/PC heet? Ventilator luid of juist stil (kapot)?</li>
+        <li>Perslucht gebruiken bij ventilatieopeningen</li>
+    </ul>
+    <div class="scope-warning">Buiten scope: HDD/SSD vervangen, RAM installeren, moederbord/ventilator defecten. Adviseer vervanging met disclaimer — advies is vrijblijvend, klant verifieert bij verkopende partij.</div>
+</div>

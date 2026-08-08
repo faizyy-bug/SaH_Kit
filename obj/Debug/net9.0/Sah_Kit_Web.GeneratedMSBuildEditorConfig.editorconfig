@@ -28,6 +28,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCZXpvZWtlbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Checklists/Email.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja2xpc3RzXEVtYWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Checklists/HardwareTraag.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja2xpc3RzXEhhcmR3YXJlVHJhYWcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Checklists/InstallatieHardware.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja2xpc3RzXEluc3RhbGxhdGllSGFyZHdhcmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Checklists/InstallatieSoftware.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja2xpc3RzXEluc3RhbGxhdGllU29mdHdhcmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Checklists/Randapparatuur.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGVja2xpc3RzXFJhbmRhcHBhcmF0dXVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/faiza/Documents/Ctheory/BS_folder/Sah_Kit_Web/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
